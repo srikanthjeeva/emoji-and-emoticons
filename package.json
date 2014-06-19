@@ -1,0 +1,11 @@
+{
+    "name": "emoji-and-emoticons",
+    "version": "0.0.1",
+    "author": "Srikanth Jeeva <sri.jjhero@gmail.com>",
+    "description": "Node module for emojify.js https://github.com/hassankhan/emojify.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/srikanthjeeva/emojify.js"
+    },
+    "main": "emojify.js"
+}
