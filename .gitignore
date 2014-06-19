@@ -1,7 +1,8 @@
 # Logs
 logs
 *.log
-
+.npmignore
+.npmrc
 # Runtime data
 pids
 *.pid
