@@ -34,4 +34,5 @@ The [Emoji images](https://github.com/hassankhan/emojify.js/tree/master/images) 
 
 ##References
 https://github.com/hassankhan/emojify.js
+
 https://www.npmjs.org/package/emoji-images (Emoticons such as ":)", ";)" was not included)
