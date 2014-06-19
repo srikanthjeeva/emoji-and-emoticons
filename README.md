@@ -14,7 +14,7 @@ npm install emoji-and-emoticons
 Download these (Emoji Images)[https://github.com/hassankhan/emojify.js/tree/master/images] and add it inside your project directory.
 
 
-require and use it in node.js code
+You can use it in your code like this,
 ```js
 var emojify     = require('emoji-and-emoticons');
 var images_path = "/images/emoji"
