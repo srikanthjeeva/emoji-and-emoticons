@@ -32,10 +32,13 @@ The [Emoji images](https://github.com/hassankhan/emojify.js/tree/master/images) 
 }
 ```
 
-##References
-https://github.com/hassankhan/emojify.js
+##Emoji Cheat Sheet
+http://www.emoji-cheat-sheet.com
 
-https://www.npmjs.org/package/emoji-images
+##References
+https://github.com/hassankhan/emojify.js (Used in Client side)
+
+https://www.npmjs.org/package/emoji-images (Works well with the Emoji cheat sheet, but emoticons such as ":), :D, :-)" were not working)
 
 
 ## License
