@@ -42,7 +42,7 @@
         /* :'-( */ sob: /:['’]-?\(|:&#x27;\(/g,
         /* :-*  */ kissing_heart: /:-?\*/g,
         /* ;-)  */ wink: /;-?\)/g,
-        /* :-/  */ pensive: /:-?\//g,
+        /* :-/  */ pensive: /:-\//g,
         /* :-s  */ confounded: /:-?s/gi,
         /* :-|  */ flushed: /:-?\|/g,
         /* :-$  */ relaxed: /:-?\$/g,
