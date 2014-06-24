@@ -20,11 +20,11 @@ You can use it in your code like this,
 var emojify     = require('emoji-and-emoticons');
 var text        = "This is a string with :smile: and :)"; // string to emojify
 var images_path = "/images/emoji" // path of the images folder
-var style       = "width: 5%;vertical-align: bottom;" //style for image
+var style       = "width: 5%" //style for image
 var emojified   = emojify(text, images_path, style);
 ```
 
-You can also apply CSS for images instead of applying inline style
+You can also apply CSS for image instead of applying inline style
 ```css
 /*css*/
 .emoji{
