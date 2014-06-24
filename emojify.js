@@ -70,11 +70,11 @@
     /* The regex used to find emoji */
     var emojiMegaRe = new RegExp(mega, "gi");
 
-    function emoji(someString, url) {
-        return emojifyString (someString, url);
+    function emoji(someString, url, style) {
+        return emojifyString (someString, url, style);
     };
 
-    function emojifyString (htmlString, url) {
+    function emojifyString (htmlString, url, style) {
         if(!htmlString) {
             return htmlString;
         }
@@ -87,7 +87,7 @@
             var input = arguments[arguments.length - 1];
             var emojiName = validator.validate(matches, index, input);
             if(emojiName) {
-                return defaultReplacer(arguments[0], emojiName, url);
+                return defaultReplacer(arguments[0], emojiName, url, style);
             }
 
             /* Did not validate, return the original value */
@@ -95,8 +95,8 @@
         });
     };
 
-    function defaultReplacer(emoji, name, url) {
-           return "<img title=':" + name + ":' alt=':" + name + ":' class='emoji' src='" + url + '/' + name + ".png' align='absmiddle' />";
+    function defaultReplacer(emoji, name, url, style) {
+           return "<img title=':" + name + ":' alt=':" + name + ":' style='"+style+"' class='emoji' src='" + url + '/' + name + ".png' align='absmiddle' />";
     };
 
     function Validator() {

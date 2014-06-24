@@ -4,25 +4,27 @@
 This is a node module for [emojify.js](https://github.com/hassankhan/emojify.js)
 
 ## install
-
 ```
 npm install emoji-and-emoticons
 ```
 
-##Usage
+##Emoji Cheat Sheet
+http://www.emoji-cheat-sheet.com
 
+##Usage
 Download these (Emoji Images)[https://github.com/hassankhan/emojify.js/tree/master/images] and add it inside your project directory.
 
 
 You can use it in your code like this,
 ```js
 var emojify     = require('emoji-and-emoticons');
-var images_path = "/images/emoji"
-var text        = 'This is a string with :smile: and :)';
-var emojified   = emojify(text, images_path);
+var text        = "This is a string with :smile: and :)"; // string to emojify
+var images_path = "/images/emoji" // path of the images folder
+var style       = "width: 5%;vertical-align: bottom;" //style for image
+var emojified   = emojify(text, images_path, style);
 ```
 
-The [Emoji images](https://github.com/hassankhan/emojify.js/tree/master/images) were big, so I have added this class to my css file. You can edit it for the size needed for your project.
+You can also apply CSS for images instead of applying inline style
 ```css
 /*css*/
 .emoji{
@@ -31,9 +33,6 @@ The [Emoji images](https://github.com/hassankhan/emojify.js/tree/master/images) 
     vertical-align: bottom;
 }
 ```
-
-##Emoji Cheat Sheet
-http://www.emoji-cheat-sheet.com
 
 ##References
 https://github.com/hassankhan/emojify.js (Used in Client side)
