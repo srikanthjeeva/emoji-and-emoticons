@@ -12,7 +12,7 @@ npm install emoji-and-emoticons
 http://www.emoji-cheat-sheet.com
 
 ##Usage
-Download these (Emoji Images)[https://github.com/hassankhan/emojify.js/tree/master/images] and add it inside your project directory.
+Download these (Emoji Images)[https://github.com/hassankhan/emojify.js/tree/master/src/images/emoji] and add it inside your project directory.
 
 
 You can use it in your code like this,
