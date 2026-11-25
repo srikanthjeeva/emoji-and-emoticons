@@ -95,8 +95,22 @@
         });
     };
 
+    /* Escape a value so it is safe inside a quoted HTML attribute */
+    function escapeAttr(value) {
+        return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+    }
+
     function defaultReplacer(emoji, name, url, style) {
-           return "<img title=':" + name + ":' alt=':" + name + ":' style='"+style+"' class='emoji' src='" + url + '/' + name + ".png' align='absmiddle' />";
+        var safeName = escapeAttr(name);
+        var src = escapeAttr((url == null ? '' : url) + '/' + name + '.png');
+        var styleAttr = style ? " style='" + escapeAttr(style) + "'" : '';
+        return "<img title=':" + safeName + ":' alt=':" + safeName + ":'" + styleAttr +
+            " class='emoji' src='" + src + "' align='absmiddle' />";
     };
 
     function Validator() {
